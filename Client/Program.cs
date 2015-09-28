@@ -26,7 +26,7 @@ namespace Client
         {
             var client = new TokenClient("https://localhost:44333/connect/token",
                                           "freightshare1",
-                                          "IIPiBTywUcK5Qv0kvmVXbSiax5wBStDMGTAIA0T/RSQ=");
+                                          "IIPiBTywUcK5Qv0kvmVXbSiax5wBStDMGTAIA0T/RSM=");
 
             return client.RequestClientCredentialsAsync("api1").Result;
         }
@@ -46,9 +46,10 @@ namespace Client
         {
             var client = new TokenClient("https://localhost:44333/connect/token",
                                           "freightshare2",
-                                          "IIPiBTywUcK5Qv0kvmVXbSiax5wBStDMGTAIA0T/RSQ=");
+                                          "IIPiBTywUcK5Qv0kvmVXbSiax5wBStDMGTAIA0T/RSM=");
 
-            return client.RequestResourceOwnerPasswordAsync("bob", "secret", "api1").Result;
+            //return client.RequestResourceOwnerPasswordAsync("bob", "secret", "api1").Result;
+            return client.RequestResourceOwnerPasswordAsync("alice", "secret", "api1").Result;
         }
     }
 }

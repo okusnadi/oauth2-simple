@@ -22,7 +22,7 @@ namespace IdSrv
                     Flow = Flows.ClientCredentials,
                     ClientSecrets = new List<Secret> 
                     {
-                        new Secret("IIPiBTywUcK5Qv0kvmVXbSiax5wBStDMGTAIA0T/RSQ=".Sha256()) //to authenticate client against the token endpoint
+                        new Secret("IIPiBTywUcK5Qv0kvmVXbSiax5wBStDMGTAIA0T/RSM=".Sha256()) //to authenticate client against the token endpoint
                     },
                     AllowedScopes = new List<string>
                     {
@@ -39,7 +39,7 @@ namespace IdSrv
                     Flow = Flows.ResourceOwner,
                     ClientSecrets = new List<Secret> 
                     {
-                        new Secret("IIPiBTywUcK5Qv0kvmVXbSiax5wBStDMGTAIA0T/RSQ=".Sha256()) //to authenticate client against the token endpoint
+                        new Secret("IIPiBTywUcK5Qv0kvmVXbSiax5wBStDMGTAIA0T/RSM=".Sha256()) //to authenticate client against the token endpoint
                     },
                     AllowedScopes = new List<string>
                     {
